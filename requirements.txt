@@ -1,0 +1,17 @@
+transformers==4.40.0 
+accelerate 
+langchain
+langchain_huggingface
+datasets
+langchain_community
+pinecone
+pinecone-client[grpc]
+sentence_transformers
+langchain_pinecone
+kiwipiepy
+tiktoken
+pymupdf
+rank_bm25
+fastapi
+uvicorn
+pyngrok
