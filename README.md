@@ -2,7 +2,7 @@
 ### main.py 실행
 ```python
 # 터미널 실행
-uvicorn main:app --reload
+uvicorn main:app --port <원하는 포트번호> --reload
 ```
 
 
