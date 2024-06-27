@@ -31,7 +31,7 @@ async def get_query_response(query_request: QueryRequest):
         # 쿼리 텍스트를 받아서 LLM 모델에 전달
         query_text = query_request.query
         response_text = rag_chain.invoke(query_text)
-        return QueryResponse(response=response_text.split('\\nAnswer')[:-1])
+        return QueryResponse(response=response_text)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
