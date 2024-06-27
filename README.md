@@ -2,7 +2,7 @@
 ### main.py 실행-> 서버에서 실행 시켜놓으면 됩니당
 ```python
 # 터미널 실행
-uvicorn main:app --port <원하는 포트번호> --reload하
+uvicorn main:app --port <원하는 포트번호> --reload
 ```
 
 
