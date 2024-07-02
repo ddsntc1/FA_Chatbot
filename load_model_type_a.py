@@ -9,7 +9,7 @@ AutoModelForCausalLm을 사용하여 모델 불러오기
 속도가 느린편에 속하나 문제 없이 돌아갈 수 있는 안정적인 방식
 '''
 def load_Auto():
-    model_id = 'Dongwookss/big_fut_final'
+    model_id = 'Dongwookss/small_fut_final' # 'Dongwookss/big_fut_final'
     tokenizer = AutoTokenizer.from_pretrained(model_id)
     model = AutoModelForCausalLM.from_pretrained(
         model_id,

@@ -11,7 +11,7 @@ def make_chain_llm(retriever,llm):
     "make answer in korean. 한국어로 대답하세요"\
     "\n\nContext:\n{context}\n;"\
     "Question: {question}"\
-    "\n\nAnswer:"
+    "answer 풋풋이 :"
 
     prompt = ChatPromptTemplate.from_template(template)
 
