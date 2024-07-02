@@ -8,11 +8,11 @@ from llmteam.retriever import *
 from llmteam.retrieve_docs import *
 from llmteam.make_chain_model import make_chain_llm
 from llmteam.make_answer import *
-from load_model_type_b import load_Fast
+# from load_model_type_b import load_Fast
 
 app = FastAPI()
-# llm = load_Auto()
-llm = load_Fast()
+llm = load_Auto()
+# llm = load_Fast()
 pinecone,bm25 = all_files('files')
 retriever=retriever(pinecone,bm25)
 rag_chain = make_chain_llm(retriever,llm)
