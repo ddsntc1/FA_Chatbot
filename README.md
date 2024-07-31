@@ -12,11 +12,11 @@ uvicorn main:app --port <원하는 포트번호> --reload
 ```python
 import requests
 url = '주소:포트번호/query'
-payload = {'query': 사용자가 입력한 query를 str형태로 입력받아융}
+payload = {'query': 입력문}
 headers = {'Content-Type': 'application/json'}
 response = requests.post(url, json=payload, headers=headers)
 response.json() # 모델 응답 결과
-# response.json()['response'][0].split('\\nAnswer')[-1][1:] 로 모델 응답부분 잘라주시면 감사하겠습니다
+# response.json()['response'].split(payload['query'])[-1]
 ```
 
 
