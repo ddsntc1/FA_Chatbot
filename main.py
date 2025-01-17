@@ -28,7 +28,7 @@ class QueryResponse(BaseModel):
 
 
 @app.post("/query", response_model=QueryResponse)
-async def get_query_response(query_request: QueryRequest):
+def get_query_response(query_request: QueryRequest):
     try:
         # 쿼리 텍스트를 받아서 LLM 모델에 전달
         query_text = query_request.query
